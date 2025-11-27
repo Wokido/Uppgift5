@@ -55,9 +55,12 @@
 
 
 #5
+text = input("Skriv något (text eller siffror): ")
 
-# Word=input("Skriv ett ord:")
-# print (Word.upper())
+print("Textens längd:", len(text))
 
-# Word=input("Skriv ett ord:")
-# print (Word.lower())
+max_len = 8
+if len(text) > max_len:
+    text = text[:max_len] + "..."
+
+print("Texten i versaler:", text.upper())
